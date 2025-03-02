@@ -3,7 +3,6 @@ import 'package:flutter/widgets.dart';
 import 'package:signuppage/core/constants/colors.dart';
 import 'package:signuppage/ui/custom_widget/buttons/custom_button_1.dart';
 import 'package:signuppage/ui/custom_widget/buttons/custom_gradient_button.dart';
-import 'package:signuppage/ui/custom_widget/shimmmer/custom_nav_bar.dart';
 
 class Overnight extends StatelessWidget {  @override
   Widget build(BuildContext context) {
@@ -13,11 +12,11 @@ class Overnight extends StatelessWidget {  @override
         child: Column(
           children: [
             Container(
-          padding: EdgeInsets.all(10),
-          decoration: BoxDecoration(
+          padding: const EdgeInsets.all(10),
+          decoration: const BoxDecoration(
             border: Border(bottom: BorderSide(width: 0.5,color:Colors.grey, ))
           ),
-          child: Row(
+          child: const Row(
             children: [
               Padding(padding: EdgeInsets.only(left: 10,right: 18,top: 10,bottom: 10)),
               Icon(Icons.search,color: blackColor,),
@@ -28,11 +27,11 @@ class Overnight extends StatelessWidget {  @override
           ),
         ),
         Container(
-          padding: EdgeInsets.all(10),
-          decoration: BoxDecoration(
+          padding: const EdgeInsets.all(10),
+          decoration: const BoxDecoration(
             border: Border(bottom: BorderSide(width: 0.5,color:Colors.grey, ))
           ),
-          child: Row(
+          child: const Row(
             children: [
               Padding(padding: EdgeInsets.only(left: 10,right: 18,top: 10,bottom: 10)),
               Icon(Icons.person,color: blackColor,),
@@ -43,11 +42,11 @@ class Overnight extends StatelessWidget {  @override
           ),
         ),
          Container(
-          padding: EdgeInsets.all(10),
-          decoration: BoxDecoration(
+          padding: const EdgeInsets.all(10),
+          decoration: const BoxDecoration(
             border: Border(bottom: BorderSide(width: 0.5,color:Colors.grey, ))
           ),
-          child: Row(
+          child: const Row(
             children: [
               Padding(padding: EdgeInsets.only(left: 10,right: 18,top: 10,bottom: 10)),
               Icon(Icons.calendar_month,color: blackColor,),
@@ -59,9 +58,9 @@ class Overnight extends StatelessWidget {  @override
             ],
           ),
         ),
-            SizedBox(height: 50,),
+            const SizedBox(height: 50,),
                 CustomGradientButton(),
-                SizedBox(height: 20,),
+                const SizedBox(height: 20,),
                 SearchButton(),
               
           ],
